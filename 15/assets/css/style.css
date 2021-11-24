@@ -1,0 +1,132 @@
+﻿* {
+  outline: none;
+
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url(../img/footer-bg.jpg);
+  background-size: cover;
+}
+
+/* header */
+header{
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+nav {
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* service */
+#service{
+ background-color: white;
+}
+
+.serviceLogo {
+  filter: invert(100%);
+}
+
+.chaptUnderLine{
+  font-size: 1.4em;
+  font-weight: 400;
+  margin-bottom: -10px;
+}
+
+
+.consultancy{
+  max-width: 60%;
+  height: auto;
+}
+
+.mentorship{
+  max-width: 60%;
+  height: auto;
+}
+
+.incubatory {
+  max-width: 60%;
+  height: auto;
+}
+
+.getIn{
+  background-image: url(../img/touch-bg.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+}
+
+/* works */
+#works{
+  background-color: gainsboro;
+}
+
+
+
+/* references */
+#references{
+  background-color: white;
+}
+
+#backGraundRef{
+  border-image: url(../img/references-image-bg.png) 100;
+  border-image-slice: 0 0 200 200;
+  border-image-width: 100%;
+}
+
+.btn-circle.btn-sm {
+  width: 20px;
+  height: 20px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  font-size: 8px;
+  text-align: center;
+}
+
+.btn1{
+  background-color: rgb(88, 61, 88);
+}
+
+.btn2{
+  background-color: rgb(197, 168, 197);
+}
+
+.btn3{
+  background-color: rgb(88, 61, 88);
+}
+
+/* contact */
+#contact{
+  background-color: black;
+}
+
+input {
+  width: 100%;
+  background: 
+      linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) center bottom 5px /calc(100% - 10px) 2px no-repeat;
+  padding: 10px;
+}
+
+.contactBtn{
+border-radius: 0 !important;
+font-size: 0.8em;
+background-color: rgb(71, 71, 71);
+border-color: rgb(70, 70, 70);
+}
+
+/* footer */
+footer{
+  background-image: url(../img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1vw;
+}
+
+.allright{
+  font-size: 0.7vw;
+}

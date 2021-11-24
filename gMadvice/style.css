@@ -1,0 +1,74 @@
+body {
+    color: rgb(255, 255, 255);
+    font-family: 'Khula', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    background-color: royalblue;
+  }
+  
+  .advice-slip{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .advice{
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    margin: 2px 4px;
+    padding: 5px 7px;
+    background-color: white;
+    min-width: 40%;
+    max-width: 40%;
+  }
+  
+  .advice p{
+    color: black
+  }
+  
+  .valid {
+    color: black;
+    border-color: green;
+    background-color: greenyellow;
+  }
+  .invalid {
+    color: black;
+    border-color: red;
+    background-color: rgb(230, 53, 8);
+  }
+  
+  .screen1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.5s ease-out;
+  }
+  
+  .up {
+    margin-top: -100vh;
+  }
+  
+  input{
+    padding: 8px;
+    font-size: 1rem;
+  }
+  
+  button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: cornsilk;
+    font-size: 1.5rem;
+  }
+  
+  .screen1 p{
+    font-size: 2rem;
+  }

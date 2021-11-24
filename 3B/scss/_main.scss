@@ -1,0 +1,280 @@
+// Write your styles here
+
+@mixin footer ($x){
+    margin-bottom: $x;
+    margin-left: $x;
+    margin-right: $x;
+}
+
+@mixin flexDur ($disp, $dir){
+    display: $disp;
+    flex-direction: $dir;
+}
+
+@mixin button ($bc,$br,$b,$d,$c,$p,$m) {
+        background-color:$bc;
+        border-radius:$br;
+        border:$b;
+        display:$d;
+        color:$c;
+        padding:$p;
+        margin-right: $m;
+}
+
+@mixin links ($col,$size){
+    color: $col;
+    font-size: $size;
+}
+%afrerEx{
+    position: relative;
+    content: "";
+    display: inline-block;
+}
+
+$font:(
+    font1: 'Source Sans Pro',
+    font2: 'Hind',
+    font3: 'Fresca'
+);
+                
+
+body{
+    background-color: $BodyBg;
+}
+
+.header {
+    background-image: $bg;
+    border-bottom-right-radius: 43%; 
+    height: 700px; 
+    width: 100%;
+    background-size: 100% 130%;
+    position: absolute;
+    top: -300px;
+    left: 0px;
+    .header-wrap{
+        margin-top: 300px;
+        margin-left: 200px;
+        .landing-logo {
+    
+            display: flex;
+            align-items: center;
+        
+            p, span {
+                @include flexDur (flex, column);
+            }
+            img{
+                height: 20px;
+                width: auto;
+            }
+        
+            p{
+                color: $logoTextCol2;
+                margin-left: 4px;
+                font-size: 12px;
+                font-family: map-get($font, font2), sans-serif;
+                text-align: center;
+            }
+        
+            span{
+                margin-left: 2px;
+                font-size: 4px;
+            }
+        
+        }
+        .header_button, .login{
+            position: relative;
+            bottom: 60px;
+        }
+        .header_button{
+            @include button ($bottomCol,3px,1px solid $bottomCol,inline-block,#ffffff,7px 17px,0px);
+        }
+        .login{
+            margin-left: 75px;
+            color: $textLink;
+        }
+        .header_heading{
+            color: $headerHea;
+            position: relative;
+            width: 320px;
+            font-family: map-get($font, font1), sans-serif;
+            font-size: 37px;
+            font-weight: bold;
+            z-index: 5;
+            &::after{
+                z-index: -1;
+                @extend %afrerEx;
+                width: 156px;
+                height: 25px;
+                left: 0px;
+                top: -42px;
+                background: $AwesomeSqrt;
+            }
+        }
+        .header_text{
+            position: relative;
+            white-space: pre-line;
+            bottom: 80px;
+            font-size: 8px;
+            color: $textHeaderCl;
+        }
+    }
+
+}
+
+.section{
+    div, p{
+        @include flexDur (flex, column);
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .section_text{
+        margin-top: 450px;
+        font-family: map-get($font, font3), sans-serif;
+        font-weight: bold;
+        color: $welcomeColor;
+        &::after{
+            z-index: -1;
+            @extend %afrerEx;
+            width: 70px;
+            height: 15px;
+            left: 42px;
+            top: -22px;
+            background: $welcomeSqrt;
+        }
+
+    }
+    .section_card_wrap{
+    position: relative;
+    bottom: 30px;
+    .section_card{
+
+        @include flexDur (flex, row);
+        margin-top: 10px;
+        border: 4px solid $SectionCardCl; 
+        background: $SectionCardCl; 
+        padding: 10px; 
+        .section_card_right_container{
+            @include flexDur (flex, column);
+            width: 350px;
+            .section_card_heading{
+            color: $CardTextHCL;
+            font-size: 18px;
+            }
+            .section_card_text{
+            color: $CardTextCL;
+            font-size: 12px;
+            }
+            .section_link{
+            @include links ($CardTextCL,9px)
+            }
+        }
+        .section_card_img{
+        margin-right: 20px;
+        margin-left: 2px;
+        }
+    }
+    }
+    .section_banner{
+        @include flexDur (flex, row);
+        align-items: center;
+        justify-content: center;
+        background: $BanerGradient;
+        width: 50%;
+        margin: auto;
+        z-index: 10;
+        position: relative;
+        top: 40px;
+        .section_banner_text_wrap{
+        @include flexDur (flex, column);
+        margin-right: auto;
+        margin-left: 120px;
+        .section_banner_heading{
+        font-size: 15px;
+        color: $BanerColor;
+        font-family: map-get($font, font1), sans-serif;
+        font-weight: bold;
+        z-index: 13;
+        &::after{
+            z-index: -2;
+            @extend %afrerEx;
+            width: 33px;
+            height: 23px;
+            left: -25px;
+            top: -28px;
+            background: $BanerSqrtCol;
+        }
+        }
+        .section_banner_text{
+        color: $BanerColor2;
+        font-size: 8px;
+        position: relative;
+        bottom: 40px;
+        right: 39px;
+        }
+        }
+        .section_banner_button{
+        @include button ($bottomCol,3px,1px solid $bottomCol,inline-block,#ffffff,7px 17px,120px);
+        }
+    }
+}
+
+.footer{
+    z-index: 5;
+    background-color: $footerCol;
+    height: 140px;
+    @include footer(-10px);
+    
+    .footer-wrap{
+        @include flexDur (flex, row);
+        position: relative;
+        top: 50px;
+        margin-left: 50px;
+        
+        .landing-logo{
+            @include flexDur (flex, row);
+            img{
+            position: relative;
+            top: 9px;
+            right: 5px;
+            height: 30px;
+            width: auto;
+            opacity: 70%;
+            }
+            p,span{
+            @include flexDur (flex, column);
+            color: $logoTextCol;
+            opacity: 70%;
+            }
+            p{
+                
+                font-size: 12px;
+                font-family: map-get($font, font2), sans-serif;
+                text-align: center;
+            }
+        
+            span{
+                position: relative;
+                bottom: 5px;
+                font-size: 5px;
+            }
+        }
+
+    }
+    .footer_text{
+    color: $logoTextCol;
+    position: relative;
+    margin: auto;
+    width: 200px;
+    font-size: 10px;
+    opacity: 70%;
+    font-family: map-get($font, font2), sans-serif;
+    }
+    .footer-cr{
+    color: $logoTextCol;
+    position: relative;
+    top: 30px;
+    margin-right: 50px;
+    font-size: 8px;
+    }
+}

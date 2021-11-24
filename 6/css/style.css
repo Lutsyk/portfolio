@@ -1,0 +1,25 @@
+.gamesDark{
+    background-color:#525252;
+    color: white;
+}
+
+.gamesLight{
+    background-color: white;
+    color: #111;
+}
+
+.footer{
+    background-color: #525252;
+    color: white;
+}
+.footer button {
+    background-color: coral;
+    color: white;
+}
+
+.pushtostartbt{
+    background-color: coral;
+    color: white;
+}
+
+

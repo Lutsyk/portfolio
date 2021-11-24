@@ -1,0 +1,401 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 10px;
+    margin-bottom: 140px;
+}
+
+.top nav ul li{
+    display: inline;
+    margin: 0; 
+    padding: 5px 30px;
+    font-size: 13px;
+    
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.heading{
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.centerH{
+    text-align: center;
+}
+
+.main-heading{
+    color: white;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+.brandsince{
+    font-size: 11px;
+    position: relative;
+    bottom: 20px;
+    color: white;
+    font-weight: 100;
+}
+
+.showbt{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    width: 140px;
+    height: 30px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    font-size: 8px;
+}
+
+
+.centerH span {
+    color: white;
+    font-size: 200%;
+    letter-spacing: 5px;
+  }
+
+.header{
+    background-image: url(../img/apples.jpg);
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    background-size: 100%;
+    height: 595px;
+    background-repeat: no-repeat;
+    
+}
+
+.sec1  {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.3rem;
+    margin-bottom: 2.3rem;
+}
+
+.Stext1 span{
+    font-weight: bold;
+    color: black;
+}
+
+.Stext1{
+    font-size: 15px;
+    margin-left: 4rem;
+    margin-right: 40px;
+    flex: 1800px;
+    white-space: pre;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.Stext1 h2{
+    font-weight: 100;
+}
+
+.Stext2{
+    font-size: 10px;
+    margin-right: 4rem;
+    margin-top: 30px;
+}
+
+.featruredAr{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(233, 230, 230, 0.87);
+    margin-left: -8px;
+    margin-right: -8px;
+    z-index: -1;
+}
+
+#faHeading{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-weight:100;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#faHeading span{
+    font-weight: 900;
+    color: black;
+}
+
+.future1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.future1 p{
+    margin-left: 2rem;
+}
+
+.future1::after{
+    color: white;
+    content: '172♥';
+    width: 50px;
+    height: 23px;
+    margin-right: 5px;
+    background-color: rgba(0, 0, 0, 0.589);
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    padding-left: 4px;
+    padding-right: 2px;
+    bottom: 7rem;
+    right: 27rem;
+    position:relative;
+}
+
+.future2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.future2::before{
+    color: white;
+    content: '172♥';
+    width: 50px;
+    height: 23px;
+    margin-right: 5px;
+    background-color: rgba(0, 0, 0, 0.589);
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    padding-left: 4px;
+    padding-right: 2px;
+    bottom: 7rem;
+    right: 5rem;
+    position:relative;
+}
+
+.future2 p{
+    margin-right: 2rem;
+}
+
+.future3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.future3::after{
+    color: white;
+    content: '20♥';
+    width: 50px;
+    height: 23px;
+    margin-right: 5px;
+    background-color: rgba(0, 0, 0, 0.589);
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    padding-left: 4px;
+    padding-right: 2px;
+    bottom: 7rem;
+    right: 27rem;
+    position:relative;
+}
+
+.future3 p{
+    margin-left: 2rem;
+}
+
+.future4{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.future4::before{
+    color: white;
+    content: '150♥';
+    width: 50px;
+    height: 23px;
+    margin-right: 5px;
+    background-color: rgba(0, 0, 0, 0.589);
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    padding-left: 4px;
+    padding-right: 2px;
+    bottom: 7rem;
+    right: 5rem;
+    position:relative;
+}
+
+.future4 p{
+    margin-right: 2rem;
+}
+
+.subCribe{
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 95%;
+    height: auto;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+.subCribe button{
+    background-color: rgb(42, 42, 42);
+    border-style: solid;
+    border-color: rgb(41, 41, 41);
+    color: white;
+    height: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 20px;
+    padding-top: 2px;
+}
+
+.subCribe input{
+    background-color: rgba(223, 223, 223, 0.842);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(41, 41, 41);
+    height: 30px;
+    margin-right: -7px;
+    width: 800px;
+}
+
+.subCribe input::placeholder{
+    color: rgb(41, 41, 41);
+    padding-left: 10px;
+}
+
+.newsletter{
+    margin: auto;
+
+}
+.newsletter span{
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.footer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: -20px;
+    margin-top: -15px;
+}
+
+.footer2 nav ul li{
+    display: inline;
+    margin: 0; 
+    padding: 5px 10px;
+    font-size: 10px;
+}
+
+.footer2 p {
+    font-size: 10px;
+    opacity: 50%;
+}
+
+hr{
+    opacity: 50%;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+.columF{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.columF div h4{
+    color: black;
+    font-size: 15px;
+}
+
+.columF div p{
+    color: rgba(105, 104, 104, 0.705);
+    font-size: 10px;
+    width: 200px;
+}
+.columF div button{
+    background-color: rgb(42, 42, 42);
+    border-style: solid;
+    border-color: rgb(41, 41, 41);
+    color: white;
+    height: 36px;
+    padding-left: 2px;
+    padding-right: 4px;
+    margin-left: 10px;
+    padding-top: 2px;
+    width: 60px;
+}
+
+.columF div input{
+    background-color: rgba(223, 223, 223, 0.842);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(41, 41, 41);
+    height: 30px;
+    margin-right: -13px;
+    width: 130px;
+}
+
+.columF div input::placeholder{
+    padding-left: 2px;
+    font-size: 9px;
+    color: rgb(41, 41, 41);
+}
+
+#time{
+    opacity: 50%;
+    margin-top: -10px;
+}
+.columF div{
+    margin-bottom: auto;
+}
+
+#col3 p{
+    white-space:pre-line;
+}

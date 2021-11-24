@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+    <title>Porsche 911</title>
+</head>
+<body>
+
+        <div class="card" id="cardG">
+            <div class="section1" id="section1">
+                <div class="logo">
+                <img src="./img/1.png" alt="" class="imgO">
+                <img src="./img/2.png" alt="" class="imgT">
+                </div>
+                <div id="buttonShow" class="backFunc" onclick="hideFuncBack()" hidden>
+                    <img src="./img/dropDawn.png" alt="" class="navbarimg">
+                </div>
+                <div id="mySidebar" class="sidebar" hidden>
+                    <input type="text" placeholder="Search.." class="mobilesearch">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                </div>
+                <div id="main" hidden>
+                <button class="openbtn" onclick="openNav()"><img src="./img/colapse.png" alt=""></button>
+                </div>
+                <div class="arrmobile" onclick="arrowMobileFunction()" hidden><img src="./img/dropArrow.png" alt=""></div>
+            </div>
+            <div class="section2" id="section1grow">
+                <div class="maincontent">
+                    <div class="navbar">
+                        <div class="dropdown">
+                            <div id="myDropdown" class="dropdown-content">
+                                <input type="text" placeholder="Search.." id="myInput">
+                            </div>
+                            <img src="./img/Untitled-1.png" alt="" onclick="myFunction()" class="dropbtn">
+                        </div>
+                        <div class="dropdawnlogo" onclick="hideFunc()">
+                            <img src="./img/dropDawn.png" alt="" class="navbarimg">
+                        </div>
+                    </div>
+
+                    <div class="logotext">
+                        <p>PORSCHE <span>SINGER</span></p>
+                    </div>
+
+                    <div class="maintext">
+                        <div><img src="./img/paragraf.png" alt=""></div>
+                        <div><h1>964 <span>Dynamic &#38;
+                            Lightweight</span> 
+                            Study</h1></div>
+                    </div>
+                    <div class="slider">
+                        <div class="aftermaintext slides">
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+                            <input type="radio" name="radio-btn" id="radio5">
+                            <input type="radio" name="radio-btn" id="radio6">
+                            <div class="slide first">
+                                <div><p><span>The Singer - Williams DLS Goodwood </span>is the ultimate carbon fiber vision of 
+                                a 1990 Porsche 964 made by restorers at <span>Singer Vehicle Design,</span> partnering with 
+                                the racing firm <span>Williams Advanced Engineering.</span></p></div>
+                                <div class="details" onclick="detailsFunc()"><button>DETAILS</button></div>
+                                <div id="detailsInfo" class="visibleDetails"><p>some details</p></div>
+                            </div>
+                            <div class="slide">
+                                <div><p><span>The Singer - Williams DLS Goodwood </span>is the ultimate carbon fiber vision of 
+                                    a 1990 Porsche 964 made by restorers at <span>Singer Vehicle Design,</span> partnering with 
+                                    the racing firm <span>Williams Advanced Engineering.</span></p></div>
+                                    <div class="details"><button>DETAILS</button></div>
+                                   
+                            </div>
+                            <div class="slide">
+                                <div><p><span>The Singer - Williams DLS Goodwood </span>is the ultimate carbon fiber vision of 
+                                    a 1990 Porsche 964 made by restorers at <span>Singer Vehicle Design,</span> partnering with 
+                                    the racing firm <span>Williams Advanced Engineering.</span></p></div>
+                                    <div class="details"><button>DETAILS</button></div>
+                                   
+                            </div>
+                            <div class="slide">
+                                <div><p><span>The Singer - Williams DLS Goodwood </span>is the ultimate carbon fiber vision of 
+                                    a 1990 Porsche 964 made by restorers at <span>Singer Vehicle Design,</span> partnering with 
+                                    the racing firm <span>Williams Advanced Engineering.</span></p></div>
+                                    <div class="details"><button>DETAILS</button></div>
+                                    
+                            </div>
+                            <div class="slide">
+                                <div><p><span>The Singer - Williams DLS Goodwood </span>is the ultimate carbon fiber vision of 
+                                    a 1990 Porsche 964 made by restorers at <span>Singer Vehicle Design,</span> partnering with 
+                                    the racing firm <span>Williams Advanced Engineering.</span></p></div>
+                                    <div class="details"><button>DETAILS</button></div>
+                                    
+                            </div>
+                            <div class="slide">
+                                <div><p><span>The Singer - Williams DLS Goodwood </span>is the ultimate carbon fiber vision of 
+                                    a 1990 Porsche 964 made by restorers at <span>Singer Vehicle Design,</span> partnering with 
+                                    the racing firm <span>Williams Advanced Engineering.</span></p></div>
+                                    <div class="details"><button>DETAILS</button></div>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                        <label for="radio6" class="manual-btn"></label>
+                    </div>
+                    <div class="prev">
+                        <img src="./img/arrow2.png" alt="" onclick="scrollFunc()">
+                        <img src="./img/arrowOrange.png" alt="" onclick="scrollRev()">
+                    </div>
+
+                    <div class="thumbs">
+                        <div onclick="hoverThumbs1()">
+                            <img src="./img/thumbs1.png" alt="" id="thumbs1">
+                        </div>
+                        <div onclick="hoverThumbs2()">
+                            <img src="./img/thumbs2.png" alt="" id="thumbs2">
+                        </div>
+                        <div onclick="hoverThumbs3()">
+                            <img src="./img/thumbs3.png" alt="" id="thumbs3">
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="orangblock">
+                        <img src="./img/orangBlock.png" alt="">
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+</body>
+</html>

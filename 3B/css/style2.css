@@ -1,0 +1,211 @@
+.header .header-wrap .header_heading::after, .section .section_text::after, .section .section_banner .section_banner_text_wrap .section_banner_heading::after {
+  position: relative;
+  content: "";
+  display: inline-block; }
+
+body {
+  background-color: #352f41; }
+
+.header {
+  background-image: url("../img/m-h-night.jpg");
+  border-bottom-right-radius: 43%;
+  height: 700px;
+  width: 100%;
+  background-size: 100% 130%;
+  position: absolute;
+  top: -300px;
+  left: 0px; }
+  .header .header-wrap {
+    margin-top: 300px;
+    margin-left: 200px; }
+    .header .header-wrap .landing-logo {
+      display: flex;
+      align-items: center; }
+      .header .header-wrap .landing-logo p, .header .header-wrap .landing-logo span {
+        display: flex;
+        flex-direction: column; }
+      .header .header-wrap .landing-logo img {
+        height: 20px;
+        width: auto; }
+      .header .header-wrap .landing-logo p {
+        color: white;
+        margin-left: 4px;
+        font-size: 12px;
+        font-family: "Hind";
+        text-align: center; }
+      .header .header-wrap .landing-logo span {
+        margin-left: 2px;
+        font-size: 4px; }
+    .header .header-wrap .header_button, .header .header-wrap .login {
+      position: relative;
+      bottom: 60px; }
+    .header .header-wrap .header_button {
+      background-color: #fcac00;
+      border-radius: 3px;
+      border: 1px solid #fcac00;
+      display: inline-block;
+      color: #ffffff;
+      padding: 7px 17px;
+      margin-right: 0px; }
+    .header .header-wrap .login {
+      margin-left: 75px;
+      color: white; }
+    .header .header-wrap .header_heading {
+      color: white;
+      position: relative;
+      width: 320px;
+      font-family: "Source Sans Pro";
+      font-size: 37px;
+      font-weight: bold;
+      z-index: 5; }
+      .header .header-wrap .header_heading::after {
+        z-index: -1;
+        width: 156px;
+        height: 25px;
+        left: 0px;
+        top: -42px;
+        background: #ee2400; }
+    .header .header-wrap .header_text {
+      position: relative;
+      white-space: pre-line;
+      bottom: 80px;
+      font-size: 8px;
+      color: white; }
+
+.section div, .section p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+.section .section_text {
+  margin-top: 450px;
+  font-family: "Fresca" sans-serif;
+  font-weight: bold;
+  color: white; }
+  .section .section_text::after {
+    z-index: -1;
+    width: 70px;
+    height: 15px;
+    left: 42px;
+    top: -22px;
+    background: #ee2400; }
+.section .section_card_wrap {
+  position: relative;
+  bottom: 30px; }
+  .section .section_card_wrap .section_card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    border: 4px solid #3e434d;
+    background: #3e434d;
+    padding: 10px; }
+    .section .section_card_wrap .section_card .section_card_right_container {
+      display: flex;
+      flex-direction: column;
+      width: 350px; }
+      .section .section_card_wrap .section_card .section_card_right_container .section_card_heading {
+        color: rgba(255, 255, 255, 0.904);
+        font-size: 18px; }
+      .section .section_card_wrap .section_card .section_card_right_container .section_card_text {
+        color: rgba(175, 175, 175, 0.733);
+        font-size: 12px; }
+      .section .section_card_wrap .section_card .section_card_right_container .section_link {
+        color: rgba(175, 175, 175, 0.733);
+        font-size: 9px; }
+    .section .section_card_wrap .section_card .section_card_img {
+      margin-right: 20px;
+      margin-left: 2px; }
+.section .section_banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #e49c1b 0%, #c8813f 47%, #931850 100%);
+  width: 50%;
+  margin: auto;
+  z-index: 10;
+  position: relative;
+  top: 40px; }
+  .section .section_banner .section_banner_text_wrap {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: 120px; }
+    .section .section_banner .section_banner_text_wrap .section_banner_heading {
+      font-size: 15px;
+      color: white;
+      font-family: "Source Sans Pro" sans-serif;
+      font-weight: bold;
+      z-index: 13; }
+      .section .section_banner .section_banner_text_wrap .section_banner_heading::after {
+        z-index: -2;
+        width: 33px;
+        height: 23px;
+        left: -25px;
+        top: -28px;
+        background: #ee2400; }
+    .section .section_banner .section_banner_text_wrap .section_banner_text {
+      color: rgba(197, 196, 196, 0.89);
+      font-size: 8px;
+      position: relative;
+      bottom: 40px;
+      right: 39px; }
+  .section .section_banner .section_banner_button {
+    background-color: #fcac00;
+    border-radius: 3px;
+    border: 1px solid #fcac00;
+    display: inline-block;
+    color: #ffffff;
+    padding: 7px 17px;
+    margin-right: 120px; }
+
+.footer {
+  z-index: 5;
+  background-color: #3e434d;
+  height: 140px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+  margin-right: -10px; }
+  .footer .footer-wrap {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 50px;
+    margin-left: 50px; }
+    .footer .footer-wrap .landing-logo {
+      display: flex;
+      flex-direction: row; }
+      .footer .footer-wrap .landing-logo img {
+        position: relative;
+        top: 9px;
+        right: 5px;
+        height: 30px;
+        width: auto;
+        opacity: 70%; }
+      .footer .footer-wrap .landing-logo p, .footer .footer-wrap .landing-logo span {
+        display: flex;
+        flex-direction: column;
+        color: #e4e3e2;
+        opacity: 70%; }
+      .footer .footer-wrap .landing-logo p {
+        font-size: 12px;
+        font-family: "Hind" sans-serif;
+        text-align: center; }
+      .footer .footer-wrap .landing-logo span {
+        position: relative;
+        bottom: 5px;
+        font-size: 5px; }
+  .footer .footer_text {
+    color: #e4e3e2;
+    position: relative;
+    margin: auto;
+    width: 200px;
+    font-size: 10px;
+    opacity: 70%;
+    font-family: "Hind" sans-serif; }
+  .footer .footer-cr {
+    color: #e4e3e2;
+    position: relative;
+    top: 30px;
+    margin-right: 50px;
+    font-size: 8px; }
