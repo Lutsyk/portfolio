@@ -31,6 +31,10 @@ body{
     padding: 1rem;
 }
 
+li {
+    font-size: 1.5rem;
+}
+
 .navbar-info a:hover {
     background: rgb(236, 104, 104);
     transition: 1s ease-in-out ;
@@ -81,7 +85,7 @@ body{
 }
 
 #projects{
-    background-color: crimson;
+    background-color: rgb(0, 0, 0);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -100,7 +104,7 @@ body{
 .work-img {
     max-width: 350px;
     height: auto;
-    border: 1px solid rgba(138, 11, 11, 0.74);
+    border: 1px solid;
     border-radius: 10px;
     box-shadow: 0 0 23px rgba(0,0,0,0.7);
     margin-bottom: 5px;
@@ -127,10 +131,10 @@ body{
     color: rgb(255, 255, 255);
 }
 
-#button-section{
+.button-section{
     display: block;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.39);
+    background-color: rgba(114, 168, 230, 0.863);
     border-radius: 10px;
     box-shadow: 0 0 23px rgba(0,0,0,0.7);
     margin: 5px;
@@ -152,8 +156,8 @@ body{
     margin: 15px;
 }
 
-.more div:hover, #button-section:hover{
-    background-color: rgba(75, 164, 187, 0.979);
+.more div:hover, .button-section:hover{
+    background-color: rgba(86, 158, 251, 0.979);
     transition: 1s ease-in-out;
 }
 
@@ -192,10 +196,20 @@ body{
 }
 
 #work div a:hover{ 
-    font-size: 4rem;
     transition: 1s ease;
     color: rgb(231, 56, 56);
     text-shadow: 2px 2px rgb(158, 58, 58);
+}
+
+.info-pj {
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.363);
+    border-radius: 10px;
+    box-shadow: 0 0 23px rgba(0,0,0,0.7);
+    margin: 5px;
+    width: 90%;
 }
 
 #projects h1{
