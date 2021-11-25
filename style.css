@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Domine', serif;
 }
 
 #navbar{
@@ -31,7 +34,7 @@
 }
 
 .navbar-info a:hover {
-    background: rgb(235, 124, 124);
+    background: rgba(86, 158, 251, 0.979);
     transition: 1s ease-in-out ;
 }
 
@@ -80,10 +83,13 @@
     margin: 10px;
     width: 50%;
     height: auto;
-    border-color: transparent;
     background-color: white;
-    box-shadow: -1px 5px 9px 0px #000000;
 }
+
+.about-me p{
+    white-space: pre-line;
+}
+
 
 #projects{
     background-color: rgb(0, 0, 0);
@@ -168,7 +174,7 @@
 
 
 #work{
-    background-color: rgb(219, 173, 19);
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,21 +189,21 @@
 
 #work h1{
     font-size: 6rem;
-    color: rgb(197, 41, 41);
+    color: rgb(255, 255, 255);
 }
 
 #work div a{ 
     font-size: 3rem;
     padding: 10px;
     margin: 10px;
-    color: rgb(0, 0, 0);
+    color: rgba(114, 168, 230, 0.863);
     text-shadow: 2px 2px rgb(255, 255, 255);
 }
 
 #work div a:hover{ 
     transition: 1s ease;
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px rgb(0, 0, 0);
+    text-shadow: 2px 2px  rgba(86, 158, 251, 0.979);
 }
 
 .info-pj {
@@ -207,10 +213,24 @@
     border-radius: 10px;
     width: 100%;
     margin-bottom: 7px;
+    height: 50px;
+}
+
+.info-pj p{
+    white-space: pre-line;
+}
+
+.info-pj a{
+    color: white;
+}
+
+.info-pj a:hover{
+    transition: 1s ease;
+    color: rgba(86, 158, 251, 0.979);
 }
 
 #projects h1{
-    font-size: 5rem;
+    font-size: 4rem;
     color: rgb(246, 247, 248);
     text-shadow: 2px 2px rgb(180, 180, 180);
 }
