@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Tools</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+  </head>
+      <div class="game-rules">
+        <div class="game-rules-container">
+          <h1>Rules:</h1>
+          <div class="rules">
+            <p>&#129308; VS &#9995; <span class="red">Lose</span> AND &#129308; VS &#9996; 
+            <span class="green"> WIN</span></p>
+          </div>
+          <div class="rules">
+            <p>&#9995; VS &#9996; <span class="red">Lose </span> AND 
+            &#9995; VS &#129308; <span class="green">WIN</span></p>
+          </div>
+          <div class="rules">
+            <p>&#9996; VS &#129308; <span class="red">Lose </span> AND 
+            &#9996; VS &#9995; <span class="green">WIN</span></p>
+          </div>
+          <button id="play">&#128075; Let's Play!</button>
+        </div>
+      </div>
+
+      <div class="play-section">
+        <div class="play-container">
+          <div id="result">
+          </div>
+          <div class="play-elem">
+            <button id="rock" class="characterBtn" value="rock">&#129308;</button>
+            <button id="paper" class="characterBtn" value="paper">&#9995;</button>
+            <button id="scissors" class="characterBtn" value="scissors">&#9996;</button>
+          </div>
+          <div class="reset">
+            <button id="resetBtn">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <script src="main.js"></script>
+  <body>
+  </body>
+</html>
